@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menunggu Hari Spesial</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Mengambil font lucu dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Canvas untuk Petasan -->
+    <canvas id="fireworks"></canvas>
+    
+    <div class="container">
+        <!-- Kotak Hitung Mundur -->
+        <div id="countdown-box">
+            <h1>Menuju Hari Spesial ❤️</h1>
+            <div id="countdown">
+                <div class="time-box"><span id="days">00</span><small>Hari</small></div>
+                <div class="time-box"><span id="hours">00</span><small>Jam</small></div>
+                <div class="time-box"><span id="minutes">00</span><small>Menit</small></div>
+                <div class="time-box"><span id="seconds">00</span><small>Detik</small></div>
+            </div>
+            <p class="target-date">2 Maret 2026</p>
+            
+            <!-- Tombol Tekan -->
+            <button id="btn-surprise">Klik Untuk Kejutan! 🎁</button>
+        </div>
+
+        <!-- Kartu Doa (Awalnya Tersembunyi) -->
+        <div id="card-doa" class="hidden">
+            <div class="card-content">
+                <div class="cake-icon">🎂</div>
+                <h2>Selamat Ulang Tahun!</h2>
+                
+                <!-- Slider Foto -->
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <img src="nailong.webp" class="slide" alt="Kenangan 1">
+                        <img src="gambar1.JPG" class="slide" alt="Kenangan 2">
+                        <img src="gambar3.JPG" class="slide" alt="Kenangan 3">
+                        <img src="gambar4.jpg" class="slide" alt="Kenangan 3">
+                        <video src="gambar2.mp4" class="slide" alt="Kenangan 3" autoplay muted loop playsinline></video>
+                        <img src="gambar5.JPG" class="slide" cccccoalt="Kenangan 3">
+                        <img src="gambar6.jpg" class="slide" alt="Kenangan 3">
+                        <img src="gambar7.jpg" class="slide" alt="Kenangan 3">
+                        <img src="gambar8.JPG" class="slide" alt="Kenangan 3">
+                        <img src="MX3L0135.JPG" class="slide" alt="Kenangan 3">
+                        <img src="gambar9.JPG" class="slide" alt="Kenangan 3">
+                        <img src="gambar10.JPG" class="slide" alt="Kenangan 3">
+                        <img src="gambar11.jpg" class="slide" alt="Kenangan 3">
+                        
+                        <img src="g35.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g36.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g37.jpg" class="slide" alt="Kenangan 3">
+
+                        <img src="g12.JPG" class="slide" alt="Kenangan 3">
+                        <img src="g13.JPG" class="slide" alt="Kenangan 3">
+                        <img src="g14.JPG" class="slide" alt="Kenangan 3">
+                        <img src="g38.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g15.JPG" class="slide" alt="Kenangan
+                         3">
+                         <img src="new1 (1).jpg" class="slide" alt="Kenangan 3">
+                        <img src="g16.JPG" class="slide" alt="Kenangan 3">
+                        <img src="new2.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g17.jpg" class="slide" alt="Kenangan 3">
+                        <img src="new3.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g18.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g19.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g20.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g21.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g22.jpg" class="slide" alt="Kenangan 3">
+                        <img src="DSC02040.JPG" class="slide" alt="Kenangan 3">
+                        <img src="g23.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g24.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g25.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g26.jpg" class="slide" alt="Kenangan 3">
+                        <video src="video1.mp4" class="slide" alt="Kenangan 3"> </video>
+                        <img src="g27.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g28.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g29.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g30.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g31.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g32.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g33.jpg" class="slide" alt="Kenangan 3">
+                        <img src="g34.jpg" class="slide" alt="Kenangan 3">
+                        <img src="ss1.jpg" class="slide" alt="Kenangan 3">
+                        <img src="ss2.jpg" class="slide" alt="Kenangan 3">
+                        <img src="new4.jpg" class="slide" alt="Kenangan 3">
+                        
+                        
+
+    
+
+                    </div>
+                    <button class="prev-slide">&#10094;</button>
+                    <button class="next-slide">&#10095;</button>
+                </div>
+
+                <p class="doa-text">
+                    Haiii ilmuyy sayanggg! <br><br>
+                    Selamat ulang tahun yaaa! Semoga di usia yang baru ini kamu semakin bahagia, sehat selalu, dan tercapai semua cita-citamu. Semoga Ilmuy menjadi anak yang sholehah dan berbakti kepada orang tua. Semoga segala urusan ilmuy dipermudah oleh Allah. Semoga ilmuy lolos SNBP di jurusan Kesehatan Masyarakat Kampus UNAIR. Semoga jalan ilmuy dipermudah melalui jalur SNBP. Semoga ilmuy dapet beasiswa. Semoga ilmuy sukses dan selalu beruntung di setiap langkah. Semoga ilmuy bisa berkembang dan menjaga pesan repuy dimanapun berada. Semoga ilmuy adalah jodoh dunia dan akhiratnya repuy. Semoga ilmuy dan repuy bisa berangkat umroh dan hajji bersama-sama dengan membawa orang tua. Semoga ilmuy bisa beli mobil HRV. Semoga ilmuy menjadi orang yang bermanfaat bagi diri sendiri dan semua orang. Semoga ilmuy diberi kekuatan di setiap langkahnya. Doa terbaik untukmu ilma raysha ilmi. Repuy always support you sayangkuuu. Jatuh dan bangkit bersama yaa sayangku, selalu di samping repuy yaaa cantikkk. Jangan lupa jaga sholatnya, jaga kesehatannya, dan jaga hatinyaaa, oteyy!!
+                    Terima kasih sudah menjadi bagian terindah dalam hidup repuy yaa sayangkuuu!!. <br>
+                    I Love You More! ❤️
+                </p>
+                <div class="card-buttons">
+                    <button id="btn-close">Tutup</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="background-music" loop>
+        <!-- GANTI DENGAN FILE LAGU KAMU, contoh: "lagu.mp3" -->
+        <source src="musik1.mp4" type="audio/mpeg">
+        Browser kamu tidak mendukung pemutar audio.
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
